@@ -1,7 +1,9 @@
 import React, { FunctionComponent as FC } from 'react';
 import './index.scss';
 
-import posterPDFUrl from '../../assets/7-material/innnovationinsights-poster-icssi2023.pdf';
+import posterPDFUrl from '../../assets/7-material/icssi2023_innnovationinsights_poster.pdf';
+import paperPDFUrl from '../../assets/7-material/vis2023_innovationsinsights_paper_20230804.pdf';
+import suppPDFUrl from '../../assets/7-material/vis2023_innovationsinsights_supp_dataset_20230804.pdf';
 
 import { Row, Col } from 'antd';
 import MyPanel from '../MyPanel';
@@ -30,11 +32,15 @@ const MaterialPage: FC<MaterialPageProps> = (props) => {
         <div className='material-div'>
           <div className='supp-unit-div'>
             <FilePdfFilled />
-            <a href={posterPDFUrl}>Poster (ICSSI2023)</a>
+            <a href={paperPDFUrl}>Paper (VIS2023)</a>
+          </div>
+          <div className='supp-unit-div'>
+            <FilePdfFilled />
+            <a href={suppPDFUrl}>Supplementary Material (VIS2023)</a>
           </div>
           <div className='supp-unit-div'>
             <FileTextFilled />
-            <a href='#'>Paper (to appear)</a>
+            <a href={posterPDFUrl}>Poster (ICSSI2023)</a>
           </div>
         </div>
       </Row>
