@@ -1,9 +1,9 @@
 import React, { FunctionComponent as FC, useState } from 'react';
 import './index.scss';
 
-import innovationinsightsLogo from '../../assets/1-media/innovationinsights-logo-2.png';
+import innovationinsightsLogo from '../../assets/1-media/innovationinsights-logo-2-2.png';
 import innovationinsightsText from '../../assets/1-media/innovationinsights-text.png';
-import cssiLogo from '../../assets/1-media/cssi-logo-white.png';
+import cssiLogo from '../../assets/1-media/cssi-logo.png';
 
 
 import { Row, Col, Anchor } from 'antd';
@@ -21,6 +21,7 @@ const MyHeader: FC<MyHeaderProps> = (props) => {
   const {
   } = props
 
+  // const [currentAnchor, setCurrentAnchor] = useState('backgroundPage') // Set the default highlighted anchor
   const [isFolded, setIsFolded] = useState('none')
   const [menuCollapseClassname, setMenuCollapseClassname] = useState('collapse-menu-div')
   const handleFoldingNav = () => {
@@ -43,19 +44,24 @@ const MyHeader: FC<MyHeaderProps> = (props) => {
     }
   }
 
+  const clickAnchor = (e: any) => {
+    console.log('e', e.target.title)
+  }
 
   return (
     <Row justify="space-between" style={{width: '100%'}}>
       <Col xs={8} sm={8} md={8} lg={8}>
         <div className='header-left-div'>
-          <div className='logo'><img src={cssiLogo} alt='logo' height={72} /></div>
-          <div className='logo'><img src={innovationinsightsLogo} alt='logo' height={72} /></div>
+          <div className='logo'><img src={cssiLogo} alt='logo' /></div>
+          <div className='logo'><img src={innovationinsightsLogo} alt='logo' /></div>
           {/* <div className='logo'><img src={innovationinsightsText} alt='logo' height={28}/></div> */}
         </div>
       </Col>
       <Col xs={0} sm={0} md={0} lg={16} id='header-right-div' className='header-right-div'>
         <div className='right-div-inside'>
           <Anchor
+            // getCurrentAnchor={() => getCurrentAnchor(currentAnchor)}
+            onClick={(e) => clickAnchor(e)}
             direction="horizontal"
             items={[
               {

@@ -13,7 +13,7 @@ import AckPage from './components/AckPage';
 import MaterialPage from './components/MaterialPage';
 
 import cssiImgUrl from './assets/8-footer/cssi-horiz.png';
-import innovationinsightsImgUrl from './assets/8-footer/logo-horiz.png';
+import innovationinsightsImgUrl from './assets/8-footer/logo-horiz.svg';
 
 import { ConfigProvider } from 'antd';
 import { Layout } from 'antd';
