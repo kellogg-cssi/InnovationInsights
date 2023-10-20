@@ -1,7 +1,11 @@
-import datasetMAGImgUrl from '../assets/4-framework-page/dataset-mag.png';
-import datasetPatentImgUrl from '../assets/4-framework-page/dataset-patent.png';
-import datasetCitationImgUrl from '../assets/4-framework-page/dataset-citation.png';
-import datasetResearcherImgUrl from '../assets/4-framework-page/dataset-researcher.png';
+// import datasetMAGImgUrl from '../assets/4-framework-page/dataset-mag.png';
+// import datasetPatentImgUrl from '../assets/4-framework-page/dataset-patent.png';
+// import datasetCitationImgUrl from '../assets/4-framework-page/dataset-citation.png';
+// import datasetResearcherImgUrl from '../assets/4-framework-page/dataset-researcher.png';
+import datasetMAGImgUrl from '../assets/4-framework-page/dataset-mag.jpg';
+import datasetPatentImgUrl from '../assets/4-framework-page/dataset-patent.jpg';
+import datasetCitationImgUrl from '../assets/4-framework-page/dataset-citation.jpg';
+import datasetResearcherImgUrl from '../assets/4-framework-page/dataset-researcher.jpg';
 
 import yifangImgUrl from '../assets/6-about/circle/yifang.png';
 import yifanImgUrl from '../assets/6-about/circle/yifan.png';
@@ -43,14 +47,14 @@ export const textContent = {
   },
   frameworkPage: {
     dataSource: [
-      { dataset: 'Scientific Research', intro: 'We leverage the Microsoft Academic Graph (MAG) dataset to retrieve information about scientific research. The dataset consists of 270M research papers and their corresponding meta information, including the title, publication year, topic keywords, doi, author list, authors’ affiliations, and citations.', imgUrl: datasetMAGImgUrl },
-      { dataset: 'Technical Invention', intro: 'We use the patent records collected in PatentsView to capture the technical inventions and reveal the development of technologies. This dataset contains over 7.9M patents filed through the United States Patent and Trademark Office (USPTO). Private data (e.g., invention disclosures and patents collected by research institutions) are also used.', imgUrl: datasetPatentImgUrl },
-      { dataset: 'Science-Technology Linkage', intro: 'To analyze the interplay between scientific research and the development of technology, we choose to use data collected from “Reliance on Science”, which contains over 40M citation data that record the details about how technical innovations (i.e., patents) cite research papers.', imgUrl: datasetCitationImgUrl },
-      { dataset: 'Researcher Profile', intro: 'This dataset provides the demographic information (e.g., gender, rank, and affiliation) of each individual researcher. The data are collected by research institutions (e.g., gender and rank) or automatically inferred by intelligent algorithms (e.g., gender). It also contains the publication records of each researcher collected from both public (e.g., MAG) and private sources (e.g., university libraries).', imgUrl: datasetResearcherImgUrl },
+      { dataset: 'Scientific Research', amount: '270M Research Papers', intro: 'We leverage the Microsoft Academic Graph (MAG) dataset to retrieve information about scientific research. The dataset consists of 270M research papers and their corresponding meta information, including the title, publication year, topic keywords, doi, author list, authors’ affiliations, and citations.', imgUrl: datasetMAGImgUrl },
+      { dataset: 'Technical Invention', amount: '7.9M USPTO Patents & Patent Disclosure (Private Data)', intro: 'We use the patent records collected in PatentsView to capture the technical inventions and reveal the development of technologies. This dataset contains over 7.9M patents filed through the United States Patent and Trademark Office (USPTO). Private data (e.g., invention disclosures and patents collected by research institutions) are also used.', imgUrl: datasetPatentImgUrl },
+      { dataset: 'Science-Technology Linkage', amount: '40M Paper-patent Citations', intro: 'To analyze the interplay between scientific research and the development of technology, we choose to use data collected from “Reliance on Science”, which contains over 40M citation data that record the details about how technical innovations (i.e., patents) cite research papers.', imgUrl: datasetCitationImgUrl },
+      { dataset: 'Researcher Profile', amount: 'Researcher Demographic Information (Private Data)', intro: 'This dataset provides the demographic information (e.g., gender, rank, and affiliation) of each individual researcher. The data are collected by research institutions (e.g., gender and rank) or automatically inferred by intelligent algorithms (e.g., gender). It also contains the publication records of each researcher collected from both public (e.g., MAG) and private sources (e.g., university libraries).', imgUrl: datasetResearcherImgUrl },
     ],
     gnnModel: 'The data analysis module calculates the contextual information that supports visual analysis and decision-making. In particular, two types of information are considerred: (1) the data facts about papers, patents,  and researchers calculated based on SciSci metrics; (2) the potentials of a paper to be transferred, which is estimated by a deep learning prediction model implemented by a graph convolutional network (GCN).',
     visualizationSystem: [
-      'Our system comprises five components.',
+      'Our system comprises five components: ',
       'The Researcher Overview and Statistics View are intended for individual-level analysis.',
       'The Innovation View shows the detailed interplay between science and technology.',
       'The Technology Inspection View and Science Inspection View enable users to explore additional contextual information within patents and papers.',
@@ -62,7 +66,7 @@ export const textContent = {
     authorList: [
       { author: 'Yifang Wang', affiliation: '[1, 2]', homepage: 'https://wangyifang.top', img: yifangImgUrl},
       { author: 'Yifan Qian', affiliation: '[1, 2]', homepage: 'https://yifanqian.com/', img: yifanImgUrl},
-      { author: 'Xiaoyu Qi', affiliation: '[3, 4]', homepage: 'https://idvxlab.com/members.html', img: xiaoyuImgUrl},
+      { author: 'Xiaoyu Qi', affiliation: '[3, 4]', homepage: 'https://idvxlab.com/', img: xiaoyuImgUrl},
       { author: 'Nan Cao', affiliation: '[3, 4]', homepage: 'https://nancao.org/', img: nanImgUrl},
       { author: 'Dashun Wang', affiliation: '[1, 2]', homepage: 'https://www.dashunwang.com/', img: dashunImgUrl},
     ],

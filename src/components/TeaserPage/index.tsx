@@ -1,12 +1,13 @@
 import React, { FunctionComponent as FC } from 'react';
 import './index.scss';
 
-import { Row, Col, Anchor } from 'antd';
+import { Row, Col, Carousel } from 'antd';
 
-import teaserImgUrl from '../../assets/1-media/kellogg.jpeg';
+import kelloggImgUrl from '../../assets/1-media/kellogg.jpeg';
+import teaserImgUrl from '../../assets/1-media/teaser2.jpg';
+import datasetImgUrl from '../../assets/1-media/dataset.jpg';
 import teaserVideoUrl from '../../assets/1-media/nu.mp4';
 import innovationinsightsTextUrl from '../../assets/1-media/innovationinsights-text.png';
-import uiBackgroundUrl from '../../assets/1-media/ui-composed.png';
 
 interface TeaserPageProps {
   // viewTitle: string;
@@ -30,8 +31,19 @@ const TeaserPage: FC<TeaserPageProps> = (props) => {
   return (
     <div className='teaser'>
       <div className="background-img">
-        {/* <img className='teaser-content' src={teaserImgUrl} /> */}
-        <video className='teaser-content' src={teaserVideoUrl} muted={true} loop={true} autoPlay></video>
+        {/* <img className='teaser-content' src={teaserImgUrl} alt='teaser'/> */}
+        {/* <video className='teaser-content' src={teaserVideoUrl} muted={true} loop={true} autoPlay></video> */}
+        <Carousel autoplay>
+          <div>
+            <img className='teaser-content' src={teaserImgUrl} alt='teaser'/>
+          </div>
+          {/* <div>
+            <video className='teaser-content' src={teaserVideoUrl} muted={true} loop={true} autoPlay></video>
+          </div> */}
+          <div>
+            <img className='teaser-content' src={datasetImgUrl} alt='teaser'/>
+          </div>
+        </Carousel>
       </div>
       <div className='foreground-div'>
         <Row justify="space-between" style={{width: '100%', height: '100%'}} className='row-div'>

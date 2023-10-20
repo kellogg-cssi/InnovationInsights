@@ -25,19 +25,27 @@ const FrameworkPage: FC<FrameworkPageProps> = (props) => {
         </div>
         <div className='text-div'>
           <div className='title'>{datasetInfo.dataset}</div>
+          <div className='dataset-size'>{datasetInfo.amount}</div>
           <div className='intro'>{datasetInfo.intro}</div>
         </div>
       </div>
     )
   })
 
-  const visualizationElementList: JSX.Element[] = textContent.frameworkPage.visualizationSystem.map((dataInfo, datasetIdx) => {
+  const visualizationElementList: JSX.Element[] = textContent.frameworkPage.visualizationSystem.slice(1, 4).map((dataInfo, datasetIdx) => {
     return (
-      <p key={datasetIdx} className='visualization-div'>
+      <li key={datasetIdx} className='visualization-div'>
         {dataInfo}
-      </p>
+      </li>
     )
   })
+  // const visualizationElementList: JSX.Element[] = textContent.frameworkPage.visualizationSystem.map((dataInfo, datasetIdx) => {
+  //   return (
+  //     <p key={datasetIdx} className='visualization-div'>
+  //       {dataInfo}
+  //     </p>
+  //   )
+  // })
 
   return (
     <>
@@ -49,7 +57,10 @@ const FrameworkPage: FC<FrameworkPageProps> = (props) => {
             <div className='subtitle'>
               <div className='subtitle-text'>DATASET</div>
             </div>
-            {dataElementList}
+            <div className='dataset-patent-div'>
+              {dataElementList}
+            </div>
+
           </div>
         </Col>
         <Col xs={24} sm={24} md={24} lg={24} >
@@ -69,7 +80,17 @@ const FrameworkPage: FC<FrameworkPageProps> = (props) => {
             <div className='subtitle'>
               <div className='subtitle-text'>VISUALIZATION PLATFORM</div>
             </div>
-            <div className='text-div'>{visualizationElementList}</div>
+            <div className='text-div'>
+              <p className='visualization-div'>
+                {textContent.frameworkPage.visualizationSystem[0]}
+              </p>
+              <ul style={{ marginLeft: 8 }}>
+                {visualizationElementList}
+              </ul>
+              <p className='visualization-div'>
+                {textContent.frameworkPage.visualizationSystem[4]}
+              </p>
+            </div>
             <div className='img-div'>
               <img className='image' src={systemImgUrl} alt={'systemImgUrl'} />
             </div>
