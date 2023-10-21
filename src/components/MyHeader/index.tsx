@@ -52,7 +52,11 @@ const MyHeader: FC<MyHeaderProps> = (props) => {
     <Row justify="space-between" style={{width: '100%'}}>
       <Col xs={8} sm={8} md={8} lg={8}>
         <div className='header-left-div'>
-          <div className='logo'><img src={cssiLogo} alt='logo' /></div>
+          <div className='logo'>
+            <a href='https://www.kellogg.northwestern.edu/research/science-of-science.aspx'>
+              <img src={cssiLogo} alt='logo' />
+            </a>
+          </div>
           <div className='logo'><img src={innovationinsightsLogo} alt='logo' /></div>
           {/* <div className='logo'><img src={innovationinsightsText} alt='logo' height={28}/></div> */}
         </div>

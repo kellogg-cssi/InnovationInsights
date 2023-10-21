@@ -4,7 +4,7 @@ import './index.scss';
 import { textContent } from '../../types/data.global';
 import frameworkImgUrl from '../../assets/4-framework-page/framework.png';
 import gnnImgUrl from '../../assets/4-framework-page/gnn-evaluation.png';
-import frameworkAllImgUrl from '../../assets/4-framework-page/framework-evaluation.png';
+import frameworkAllImgUrl from '../../assets/4-framework-page/framework-evaluation.jpg';
 import systemImgUrl from '../../assets/4-framework-page/system.png';
 
 import { Row, Col } from 'antd';

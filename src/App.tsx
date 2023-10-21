@@ -55,7 +55,9 @@ function App() {
             <div className='left'>
               <div className='logo-group'>
                 <div className='image-div'>
-                  <img className='image' src={cssiImgUrl} alt={'cssi-logo'} />
+                  <a href='https://www.kellogg.northwestern.edu/research/science-of-science.aspx'>
+                    <img className='image' src={cssiImgUrl} alt={'cssi-logo'} />
+                  </a>
                 </div>
                 <div className='image-div'>
                   <img className='image' src={innovationinsightsImgUrl} alt={'innovationinsights-logo'} />
@@ -67,7 +69,11 @@ function App() {
             </div>
             <div className='right'>
               <div className='org-info'>
-                <div className='text-div'>The Center for Science of Science & Innovation</div>
+                <div className='text-div'>
+                  <a href='https://www.kellogg.northwestern.edu/research/science-of-science.aspx' style={{color: 'white'}}>
+                    The Center for Science of Science & Innovation
+                  </a>
+                </div>
                 <div className='text-div'>Northwestern University</div>
                 <div className='text-div'>2211 Campus Drive</div>
                 <div className='text-div'>Evanston, IL 60208</div>
