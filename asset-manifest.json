@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/InnovationInsights/static/css/main.c270e072.css",
-    "main.js": "/InnovationInsights/static/js/main.77c1a19d.js",
+    "main.js": "/InnovationInsights/static/js/main.1324dea1.js",
     "static/js/787.7f0f527c.chunk.js": "/InnovationInsights/static/js/787.7f0f527c.chunk.js",
     "static/media/demo-video.mp4": "/InnovationInsights/static/media/demo-video.7f8214cdae631e16ff9c.mp4",
     "static/media/case-study.mp4": "/InnovationInsights/static/media/case-study.73fd83c05ebe1cf753a3.mp4",
     "static/media/vis2023_innovationsinsights_paper_20230808.pdf": "/InnovationInsights/static/media/vis2023_innovationsinsights_paper_20230808.5d23ee8ca331733d0d29.pdf",
     "static/media/system.png": "/InnovationInsights/static/media/system.7686746cdcb07e87a599.png",
     "static/media/icssi2023_innnovationinsights_poster.pdf": "/InnovationInsights/static/media/icssi2023_innnovationinsights_poster.f6bed03b8dc7ad18e643.pdf",
-    "static/media/innovationinsights-text.png": "/InnovationInsights/static/media/innovationinsights-text.b3c3a37d05715d824016.png",
     "static/media/framework-evaluation.png": "/InnovationInsights/static/media/framework-evaluation.e668e27048263718c73f.png",
-    "static/media/teaser2.jpg": "/InnovationInsights/static/media/teaser2.e702d3ce926594b72e75.jpg",
-    "static/media/dataset.jpg": "/InnovationInsights/static/media/dataset.c7bce9b90d5527c5622d.jpg",
     "static/media/dataset-mag.jpg": "/InnovationInsights/static/media/dataset-mag.c8ae2dccde9f23312c66.jpg",
     "static/media/dataset-patent.jpg": "/InnovationInsights/static/media/dataset-patent.cb1bf115ec8e8f6598d6.jpg",
     "static/media/dataset-researcher.jpg": "/InnovationInsights/static/media/dataset-researcher.3e0e24dd9e64799c2675.jpg",
+    "static/media/innovationinsights-text.png": "/InnovationInsights/static/media/innovationinsights-text.0c1707ba167b79c9f09f.png",
     "static/media/dataset-citation.jpg": "/InnovationInsights/static/media/dataset-citation.896fd2c280acc51f84ba.jpg",
     "static/media/xiaoyu.png": "/InnovationInsights/static/media/xiaoyu.bbed033635a1a0b41ebc.png",
     "static/media/nan.png": "/InnovationInsights/static/media/nan.63e9ee3c805bf9188da8.png",
     "static/media/background-page-1.png": "/InnovationInsights/static/media/background-page-1.6129df68bb33f8af6138.png",
     "static/media/yifang.png": "/InnovationInsights/static/media/yifang.ac7e9e33748d6eb03201.png",
+    "static/media/teaser2.jpg": "/InnovationInsights/static/media/teaser2.f57d955a4f2b235039e6.jpg",
+    "static/media/dataset.jpg": "/InnovationInsights/static/media/dataset.17ff7386db3aa53cdd69.jpg",
     "static/media/dashun.png": "/InnovationInsights/static/media/dashun.61cfd73e938443586a70.png",
     "static/media/background-page-2.png": "/InnovationInsights/static/media/background-page-2.cf97b758ecb862ebfee4.png",
     "static/media/open-sans-bold.ttf": "/InnovationInsights/static/media/open-sans-bold.fc10ccf11a61bac919b9.ttf",
@@ -43,11 +43,11 @@
     "static/media/logo-horiz.svg": "/InnovationInsights/static/media/logo-horiz.dff563467e23204f6ed7c33c413a31b1.svg",
     "index.html": "/InnovationInsights/index.html",
     "main.c270e072.css.map": "/InnovationInsights/static/css/main.c270e072.css.map",
-    "main.77c1a19d.js.map": "/InnovationInsights/static/js/main.77c1a19d.js.map",
+    "main.1324dea1.js.map": "/InnovationInsights/static/js/main.1324dea1.js.map",
     "787.7f0f527c.chunk.js.map": "/InnovationInsights/static/js/787.7f0f527c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c270e072.css",
-    "static/js/main.77c1a19d.js"
+    "static/js/main.1324dea1.js"
   ]
 }
